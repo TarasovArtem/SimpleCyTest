@@ -11,5 +11,8 @@
     "url": "https://github.com/TarasovArtem"
   },
   "author": "Artem Tarasov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.5.0"
+  }
 }
