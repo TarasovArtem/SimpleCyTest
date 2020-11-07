@@ -15,3 +15,6 @@ commands for are running test:
     "cypress:open": "cypress open"
   }
   and use command npm run cypress:open
+
+5. Cypress CLI:
+   

@@ -1,5 +1,6 @@
 {
     "viewportWidth": 1280,
     "viewportHeight": 720,
-    "baseUrl": "https://nadja-mansurov.github.io/"
+    "baseUrl": "https://nadja-mansurov.github.io/",
+    "defaultCommandTimeout": 10000
 }

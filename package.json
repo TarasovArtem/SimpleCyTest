@@ -4,8 +4,10 @@
   "description": "Cypress test a one project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress:open": "cypress open"
+    "cypress": "cypress open",
+    "cy:run:chrome": "cypress run --spec 'cypress/integration/e2e/**/*' --headless --browser chrome",
+    "cy:run:firefox": "cypress run --spec 'cypress/integration/e2e/**/*' --headless --browser firefox",
+    "cy:run:edge": "cypress run --spec 'cypress/integration/e2e/**/*' --headless --browser edge"
   },
   "repository": {
     "type": "git",
@@ -14,6 +16,12 @@
   "author": "Artem Tarasov",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^5.5.0"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "cypress": "^5.5.0",
+    "ts-loader": "^8.0.10",
+    "typescript": "^4.0.5",
+    "webpack": "^5.4.0"
   }
 }
