@@ -15,9 +15,11 @@ describe('Visual test', () => {
     let textTopicContent = 'The data: a random selection of Coronavirus tweets';
     let cardHeaderData1 = 'Corona & Twitter: A love story';
 
-    before(()=>{
+    beforeEach(()=>{
         navigation.navigate();
         navigation.navUrl().should('include', 'https://nadja-mansurov.github.io/');
+        cy.log('Enter')
+        
     })
     it('Should show items and items text of header', () => {
         elementPage.headerNavbar().should('have.text', nameOfResearch);
@@ -31,5 +33,18 @@ describe('Visual test', () => {
         elementPage.dataTopic();
         elementPage.cardHeaderData1();
         elementPage.chartData1().should('be.visible');
+
+        elementPage.cardHeaderData2();
+        elementPage.chartData2().should('be.visible');
+        elementPage.selectChartData2().select('new_cases');
+        cy.log('New Cases')
+        elementPage.selectChartData2().select('new_deaths');
+        cy.log('New Deaths')
+        elementPage.selectChartData2().select('new_tests');
+        cy.log('New Tests')
+
+        elementPage.cardHeaderData3();
+        elementPage.chartData3().should('be.visible');   
+
     })
   })

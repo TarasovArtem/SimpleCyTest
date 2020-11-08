@@ -40,6 +40,9 @@ class ElementPage {
     chartData2() {
         return cy.get('#vis_chart_id_1_0 > .chart-wrapper > .marks');
     }
+    selectChartData2() {
+        return cy.get('#vis_chart_id_1_0 > .chart-wrapper > .vega-bindings > .vega-bind > label > select');
+    }
 
     cardHeaderData3() {
         return cy.get(':nth-child(2) > :nth-child(2) > .row > :nth-child(2) > .card > .card-header');

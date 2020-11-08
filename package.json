@@ -15,13 +15,8 @@
   },
   "author": "Artem Tarasov",
   "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "babel-loader": "^8.1.0",
-    "cypress": "^5.5.0",
-    "ts-loader": "^8.0.10",
-    "typescript": "^4.0.5",
-    "webpack": "^5.4.0"
+  "devDependencies": { 
+    "cypress": "^5.5.0"
+   
   }
 }
